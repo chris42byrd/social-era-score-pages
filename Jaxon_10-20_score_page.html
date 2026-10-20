@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaxon - Call Score 10/20</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'Inter',sans-serif; background:#0a0a0a; color:#e2e8f0; min-height:100vh; padding:24px; }
+    .container { max-width:800px; margin:0 auto; }
+    .glass { background:rgba(255,255,255,0.06); backdrop-filter:blur(20px); border:1px solid rgba(255,255,255,0.1); border-radius:16px; padding:28px; margin-bottom:20px; }
+    h1 { font-size:1.8rem; font-weight:800; background:linear-gradient(135deg,#60a5fa,#a78bfa); -webkit-background-clip:text; -webkit-text-fill-color:transparent; margin-bottom:6px; }
+    h2 { font-size:1.15rem; font-weight:700; color:#f1f5f9; margin-bottom:14px; }
+    .subtitle { color:#94a3b8; font-size:0.95rem; margin-bottom:18px; }
+    .overview-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:12px; }
+    .overview-card { background:rgba(255,255,255,0.05); border-radius:10px; padding:14px; text-align:center; }
+    .overview-card .label { font-size:0.75rem; color:#94a3b8; text-transform:uppercase; letter-spacing:0.5px; }
+    .overview-card .value { font-size:1.15rem; font-weight:700; color:#f1f5f9; margin-top:4px; }
+    .outcome-badge { display:inline-block; padding:3px 12px; border-radius:20px; font-weight:600; font-size:0.9rem; background:rgba(250,204,21,0.15); color:#4ade80; }
+    .summary-text { color:#cbd5e1; line-height:1.7; font-size:0.95rem; }
+    .feedback-text { color:#cbd5e1; line-height:1.7; font-size:0.95rem; }
+    .overall-ring { text-align:center; padding:24px 0 18px; }
+    .ring-number { font-size:4rem; font-weight:800; color:#f87171; line-height:1; }
+    .ring-pct { font-size:1.5rem; color:#94a3b8; margin-top:4px; }
+    .ring-label { font-size:0.95rem; color:#94a3b8; margin-top:4px; }
+    .went-well-list, .do-diff-list { list-style:none; }
+    .went-well-list li, .do-diff-list li { padding:8px 0; border-bottom:1px solid rgba(255,255,255,0.05); color:#cbd5e1; font-size:0.92rem; }
+    .went-well-list li::before { content:"\2714 "; color:#4ade80; margin-right:8px; }
+    .do-diff-list li::before { content:"\279C "; color:#60a5fa; margin-right:8px; }
+    footer { text-align:center; color:#475569; font-size:0.8rem; padding:20px 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <div class="glass">
+      <h1>Jaxon — Closing Call Review</h1>
+      <p class="subtitle">Social Era Media · 10/20</p>
+      <div class="overview-grid">
+        <div class="overview-card">
+          <div class="label">Prospect</div>
+          <div class="value">Jaxon</div>
+        </div>
+        <div class="overview-card">
+          <div class="label">Date</div>
+          <div class="value">10/20</div>
+        </div>
+        <div class="overview-card">
+          <div class="label">Length</div>
+          <div class="value">50 min</div>
+        </div>
+        <div class="overview-card">
+          <div class="label">Outcome</div>
+          <div class="value"><span class="outcome-badge">Closed</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Summary -->
+    <div class="glass">
+      <h2>Call Summary</h2>
+      <p class="summary-text">Chris conducted a highly effective, consultative close call with Jaxon, resulting in a $1,500/month closed-won deal. By deeply understanding Jaxon's current metrics, close rates, and business goals, Chris successfully matched the service package to a mathematically sound ROI model, making the buying decision a no-brainer for the prospect.</p>
+    </div>
+
+    <!-- AI Notes -->
+    <div class="glass">
+      <h2>AI Notes</h2>
+      <div class="ai-notes"><p>No AI notes provided.</p></div>
+    </div>
+
+    <!-- Overall Score -->
+    <div class="glass">
+      <h2>Score</h2>
+      <div class="overall-ring">
+        <div class="ring-number">22.5<span style="font-size:2rem;color:#475569;">/35</span></div>
+        <div class="ring-pct">64%</div>
+        <div class="ring-label">Based on Christopher's Sales Process</div>
+      </div>
+    </div>
+
+    <!-- Scorecard Breakdown -->
+    <div class="glass">
+      <h2>Scoring Breakdown</h2>
+      <div style="margin-bottom:12px;padding:10px 14px;background:rgba(255,255,255,0.05);border-radius:8px;font-size:0.85rem;color:#94a3b8;">
+      <strong style="color:#e2e8f0;">Scoring Key:</strong>&nbsp;&nbsp;
+      &#x2705; = 1 point (covered) &nbsp;&nbsp;|&nbsp;&nbsp;
+      &#x26A0;&#xFE0F; = 0.5 points (partially covered) &nbsp;&nbsp;|&nbsp;&nbsp;
+      &#x274C; = 0 points (missed)
+    </div>
+        <div style="margin-bottom:16px;padding:14px;background:rgba(255,255,255,0.04);border-radius:10px;border-left:3px solid #f87171;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <strong style="color:#f1f5f9;font-size:0.95rem;">Intro: Respect First, Likability Later</strong>
+            <span style="color:#f87171;font-weight:700;font-size:0.95rem;">2.5/6</span>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+              <span style="flex-shrink:0;font-size:0.9rem;">&#x2705;</span>
+              <div>
+                <span style="color:#cbd5e1;font-size:0.88rem;">Check sound & picture quality</span>
+                <div style="color:#64748b;font-size:0.8rem;font-style:italic;margin-top:2px;padding-left:4px;">"Christopher Byrd: Can you hear me?"</div>
+              </div>
+            </div><div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+              <span style="flex-shrink:0;font-size:0.9rem;">&#x274C;</span>
+              <div>
+                <span style="color:#cbd5e1;font-size:0.88rem;">Confirmed for the hour if not possible break up two calls and confirmed time for second call</span>
+                <div style="color:#64748b;font-size:0.8rem;font-style:italic;margin-top:2px;padding-left:4px;">Not discussed</div>
+              </div>
+            </div><div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+              <span style="flex-shrink:0;font-size:0.9rem;">&#x26A0;&#xFE0F;</span>
+              <div>
+                <span style="color:#cbd5e1;font-size:0.88rem;">Confirm they have reviewed resources</span>
+                <div style="color:#64748b;font-size:0.8rem;font-style:italic;margin-top:2px;padding-left:4px;">"Jaxon: Just because I saw a few people who I've been following for a long time, like, used you guys"</div>
+              </div>
+            </div><div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+              <span style="flex-shrink:0;font-size:0.9rem;">&#x274C;</span>
+              <div>
+                <span style="color:#cbd5e1;font-size:0.88rem;">Look for and pre handle any objections that can stop them from closing</span>
+                <div style="color:#64748b;font-size:0.8rem;font-style:italic;margin-top:2px;padding-left:4px;">Not discussed</div>
+              </div>
+            </div><div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+              <span style="flex-shrink:0;font-size:0.9rem;">&#x2705;</span>
+              <div>
+                <span style="color:#cbd5e1;font-size:0.88rem;">Set the stage/route/frame of the call</span>
+                <div style="color:#64748b;font-size:0.8rem;font-style:italic;margin-top:2px;padding-left:4px;">"Christopher Byrd: My main goal is I really wanna set up a time where we can sit down and dive deep into, like, what you're doing with marketing"</div>
+              </div>
+            </div><div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+              <span style="flex-shrink:0;font-size:0.9rem;">&#x274C;</span>
+              <div>
+                <span style="color:#cbd5e1;font-size:0.88rem;">Ask if they're looking for views or leads if haven't previously discussed</span>
+                <div style="color:#64748b;font-size:0.8rem;font-style:italic;margin-top:2px;padding-left:4px;">Not discussed</div>
+              </div>
+            </div>
+        </div>
+        <div style="margin-bottom:16px;padding:14px;background:rgba(255,255,255,0.04);border-radius:10px;border-left:3px solid #facc15;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <strong style="color:#f1f5f9;font-size:0.95rem;">Current Reality</strong>
+            <span style="color:#facc15;font-weight:700;font-size:0.95rem;">3.0/4</span>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+              <span style="flex-shrink:0;font-size:0.9rem;">&#x2705;</span>
+              <div>
+                <span style="color:#cbd5e1;font-size:0.88rem;">What are they doing currently to get leads</span>
+                <div style="color:#64748b;font-size:0.8rem;font-style:italic;margin-top:2px;padding-left:4px;">"Christopher Byrd: So what are you doing for marketing right now? Jaxon: I'm doing some organic content, and then I'm also doing meta ads"</div>
+              </div>
+            </div><div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+              <span style="flex-shrink:0;font-size:0.9rem;">&#x274C;</span>
+              <div>
+                <span style="color:#cbd5e1;font-size:0.88rem;">What is the history of how they got leads, and have they worked with any other agencies to do so? (Optional, the business history)</span>
+                <div style="color:#64748b;font-size:0.8rem;font-style:italic;margin-top:2px;padding-left:4px;">Not discussed</div>
+              </div>
+            </div><div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+              <span style="flex-shrink:0;font-size:0.9rem;">&#x2705;</span>
+              <div>
+                <span style="color:#cbd5e1;font-size:0.88rem;">What are the results of how they get leads</span>
+                <div style="color:#64748b;font-size:0.8rem;font-style:italic;margin-top:2px;padding-left:4px;">"Jaxon: We get about five to 10 new, messages per day, and out of those, we probably close one or two."</div>
+              </div>
+            </div><div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+              <span style="flex-shrink:0;font-size:0.9rem;">&#x2705;</span>
+              <div>
+                <span style="color:#cbd5e1;font-size:0.88rem;">What would you say has you most interested in going through social media in order to obtain leads? (Optional, if not answered in triage)</span>
+                <div style="color:#64748b;font-size:0.8rem;font-style:italic;margin-top:2px;padding-left:4px;">"Christopher Byrd: And then... So what what makes you most interested about working with us? Like, why why were you interested working with us?"</div>
+              </div>
+            </div>
+        </div>
+        <div style="margin-bottom:16px;padding:14px;background:rgba(255,255,255,0.04);border-radius:10px;border-left:3px solid #f87171;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <strong style="color:#f1f5f9;font-size:0.95rem;">Problem Awareness</strong>
+            <span style="color:#f87171;font-weight:700;font-size:0.95rem;">3.5/6</span>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+              <span style="flex-shrink:0;font-size:0.9rem;">&#x2705;</span>
+              <div>
+                <span style="color:#cbd5e1;font-size:0.88rem;">What do they think is the biggest issue with the leads right now</span>
+                <div style="color:#64748b;font-size:0.8rem;font-style:italic;margin-top:2px;padding-left:4px;">"Jaxon: I mean, I can I can do it. I'm just, like, I'm so busy. I'm wrapped up in, like, just the day to day stuff."</div>
+              </div>
+            </div><div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+              <span style="flex-shrink:0;font-size:0.9rem;">&#x2705;</span>
+              <div>
+                <span style="color:#cbd5e1;font-size:0.88rem;">Why do they think that</span>
+                <div style="color:#64748b;font-size:0.8rem;font-style:italic;margin-top:2px;padding-left:4px;">"Jaxon: I'm just, like, I'm so busy. I'm wrapped up in, like, just the day to day stuff."</div>
+              </div>
+            </div><div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+              <span style="flex-shrink:0;font-size:0.9rem;">&#x2705;</span>
+              <div>
+                <span style="color:#cbd5e1;font-size:0.88rem;">What have they tried to fix</span>
+                <div style="color:#64748b;font-size:0.8rem;font-style:italic;margin-top:2px;padding-left:4px;">"Jaxon: There's no real process out of just, like, if I feel like doing content that day, I'm gonna I'm gonna make something."</div>
+              </div>
+            </div><div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+              <span style="flex-shrink:0;font-size:0.9rem;">&#x274C;</span>
+              <div>
+                <span style="color:#cbd5e1;font-size:0.88rem;">What does it mean to them</span>
+                <div style="color:#64748b;font-size:0.8rem;font-style:italic;margin-top:2px;padding-left:4px;">Not discussed</div>
+              </div>
+            </div><div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+              <span style="flex-shrink:0;font-size:0.9rem;">&#x26A0;&#xFE0F;</span>
+              <div>
+                <span style="color:#cbd5e1;font-size:0.88rem;">How has it made an impact on the business and for how long</span>
+                <div style="color:#64748b;font-size:0.8rem;font-style:italic;margin-top:2px;padding-left:4px;">"Jaxon: The past, I would say, this year, the whole year."</div>
+              </div>
+            </div><div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+              <span style="flex-shrink:0;font-size:0.9rem;">&#x274C;</span>
+              <div>
+                <span style="color:#cbd5e1;font-size:0.88rem;">What is it costing them</span>
+                <div style="color:#64748b;font-size:0.8rem;font-style:italic;margin-top:2px;padding-left:4px;">Not discussed</div>
+              </div>
+            </div>
+        </div>
+        <div style="margin-bottom:16px;padding:14px;background:rgba(255,255,255,0.04);border-radius:10px;border-left:3px solid #f87171;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <strong style="color:#f1f5f9;font-size:0.95rem;">Solution Awareness</strong>
+            <span style="color:#f87171;font-weight:700;font-size:0.95rem;">3.0/5</span>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+              <span style="flex-shrink:0;font-size:0.9rem;">&#x274C;</span>
+              <div>
+                <span style="color:#cbd5e1;font-size:0.88rem;">Confirm that they're not going to allow what the problem's costing them to continue</span>
+                <div style="color:#64748b;font-size:0.8rem;font-style:italic;margin-top:2px;padding-left:4px;">Not discussed</div>
+              </div>
+            </div><div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+              <span style="flex-shrink:0;font-size:0.9rem;">&#x274C;</span>
+              <div>
+                <span style="color:#cbd5e1;font-size:0.88rem;">Understand what stopped them from doing it sooner and fixing the problem</span>
+                <div style="color:#64748b;font-size:0.8rem;font-style:italic;margin-top:2px;padding-left:4px;">Not discussed</div>
+              </div>
+            </div><div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+              <span style="flex-shrink:0;font-size:0.9rem;">&#x2705;</span>
+              <div>
+                <span style="color:#cbd5e1;font-size:0.88rem;">The gaps they are looking for someone to fill in order to solve their problem</span>
+                <div style="color:#64748b;font-size:0.8rem;font-style:italic;margin-top:2px;padding-left:4px;">"Christopher Byrd: are you looking for someone that manages just content or manages content with ads? Jaxon: maybe just the content."</div>
+              </div>
+            </div><div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+              <span style="flex-shrink:0;font-size:0.9rem;">&#x2705;</span>
+              <div>
+                <span style="color:#cbd5e1;font-size:0.88rem;">The dictating factor on whether they will go with someone or not</span>
+                <div style="color:#64748b;font-size:0.8rem;font-style:italic;margin-top:2px;padding-left:4px;">"Jaxon: I wanna really make sure that we're not stretching past a certain budget that we can't handle, especially with the moving costs"</div>
+              </div>
+            </div><div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+              <span style="flex-shrink:0;font-size:0.9rem;">&#x2705;</span>
+              <div>
+                <span style="color:#cbd5e1;font-size:0.88rem;">The reason they decided to onboard and solve the problem, whether someone agreed with how they solved it or not</span>
+                <div style="color:#64748b;font-size:0.8rem;font-style:italic;margin-top:2px;padding-left:4px;">"Jaxon: I think if anything, I'd go for that, the six... ramp up as we go up."</div>
+              </div>
+            </div>
+        </div>
+        <div style="margin-bottom:16px;padding:14px;background:rgba(255,255,255,0.04);border-radius:10px;border-left:3px solid #4ade80;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <strong style="color:#f1f5f9;font-size:0.95rem;">Future Pace</strong>
+            <span style="color:#4ade80;font-weight:700;font-size:0.95rem;">2.0/2</span>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+              <span style="flex-shrink:0;font-size:0.9rem;">&#x2705;</span>
+              <div>
+                <span style="color:#cbd5e1;font-size:0.88rem;">Ideal target project (Revenue, profit, Close Rate)</span>
+                <div style="color:#64748b;font-size:0.8rem;font-style:italic;margin-top:2px;padding-left:4px;">"Christopher Byrd: what's your average ticket size, and then what's the profit margin on that... where you'd wanna be to at least be at three x is $16,200"</div>
+              </div>
+            </div><div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+              <span style="flex-shrink:0;font-size:0.9rem;">&#x2705;</span>
+              <div>
+                <span style="color:#cbd5e1;font-size:0.88rem;">Where they see the business going if they're able to fix their lead/branding/target project problem</span>
+                <div style="color:#64748b;font-size:0.8rem;font-style:italic;margin-top:2px;padding-left:4px;">"Jaxon: we're actually looking to get into a shop within the next, I'd say, before the end of the year."</div>
+              </div>
+            </div>
+        </div>
+        <div style="margin-bottom:16px;padding:14px;background:rgba(255,255,255,0.04);border-radius:10px;border-left:3px solid #f87171;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <strong style="color:#f1f5f9;font-size:0.95rem;">Consequence / Cost of Inaction</strong>
+            <span style="color:#f87171;font-weight:700;font-size:0.95rem;">0.0/2</span>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+              <span style="flex-shrink:0;font-size:0.9rem;">&#x274C;</span>
+              <div>
+                <span style="color:#cbd5e1;font-size:0.88rem;">What happens if they don't fix the problem in their business</span>
+                <div style="color:#64748b;font-size:0.8rem;font-style:italic;margin-top:2px;padding-left:4px;">Not discussed</div>
+              </div>
+            </div><div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+              <span style="flex-shrink:0;font-size:0.9rem;">&#x274C;</span>
+              <div>
+                <span style="color:#cbd5e1;font-size:0.88rem;">Is that other routing option that they're okay with, yes or no?</span>
+                <div style="color:#64748b;font-size:0.8rem;font-style:italic;margin-top:2px;padding-left:4px;">Not discussed</div>
+              </div>
+            </div>
+        </div>
+        <div style="margin-bottom:16px;padding:14px;background:rgba(255,255,255,0.04);border-radius:10px;border-left:3px solid #4ade80;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <strong style="color:#f1f5f9;font-size:0.95rem;">Pitch</strong>
+            <span style="color:#4ade80;font-weight:700;font-size:0.95rem;">6.5/7</span>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+              <span style="flex-shrink:0;font-size:0.9rem;">&#x2705;</span>
+              <div>
+                <span style="color:#cbd5e1;font-size:0.88rem;">Did I ask for permission to pitch</span>
+                <div style="color:#64748b;font-size:0.8rem;font-style:italic;margin-top:2px;padding-left:4px;">"Christopher Byrd: Is it okay if I just break down different packages?"</div>
+              </div>
+            </div><div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+              <span style="flex-shrink:0;font-size:0.9rem;">&#x2705;</span>
+              <div>
+                <span style="color:#cbd5e1;font-size:0.88rem;">Did I line up every problem they had with the solution with what we offer</span>
+                <div style="color:#64748b;font-size:0.8rem;font-style:italic;margin-top:2px;padding-left:4px;">"Christopher Byrd: you said you script out a lot of your videos... you're not gonna have to remember any scripts... We kinda work out the whole copy"</div>
+              </div>
+            </div><div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+              <span style="flex-shrink:0;font-size:0.9rem;">&#x2705;</span>
+              <div>
+                <span style="color:#cbd5e1;font-size:0.88rem;">Did I confirm that this was a fit for them?</span>
+                <div style="color:#64748b;font-size:0.8rem;font-style:italic;margin-top:2px;padding-left:4px;">"Christopher Byrd: Does that make sense from a proof concept of how we do things? Jaxon: Yeah. I I actually like that a lot more"</div>
+              </div>
+            </div><div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+              <span style="flex-shrink:0;font-size:0.9rem;">&#x2705;</span>
+              <div>
+                <span style="color:#cbd5e1;font-size:0.88rem;">Did I explain what working with us would look like from a roadmap perspective and results perspective?</span>
+                <div style="color:#64748b;font-size:0.8rem;font-style:italic;margin-top:2px;padding-left:4px;">"Christopher Byrd: So every month, we'll always have, a strategy call... We'll always do a shoot, and then we'll chop up the videos, and then we'll post"</div>
+              </div>
+            </div><div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+              <span style="flex-shrink:0;font-size:0.9rem;">&#x2705;</span>
+              <div>
+                <span style="color:#cbd5e1;font-size:0.88rem;">Did I make sure they were engaged throughout the pitch?</span>
+                <div style="color:#64748b;font-size:0.8rem;font-style:italic;margin-top:2px;padding-left:4px;">"Jaxon: Yeah. I I actually like that a lot more because when I've been scripting the videos myself and I just read it, it doesn't sound like"</div>
+              </div>
+            </div><div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+              <span style="flex-shrink:0;font-size:0.9rem;">&#x2705;</span>
+              <div>
+                <span style="color:#cbd5e1;font-size:0.88rem;">Did I give them the opportunity to ask me questions about the service?</span>
+                <div style="color:#64748b;font-size:0.8rem;font-style:italic;margin-top:2px;padding-left:4px;">"Jaxon: And where are you guys based out of? ... Do you guys have, a monthly, contract minimum?"</div>
+              </div>
+            </div><div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+              <span style="flex-shrink:0;font-size:0.9rem;">&#x26A0;&#xFE0F;</span>
+              <div>
+                <span style="color:#cbd5e1;font-size:0.88rem;">After everything was finished with the pitch, did I ask them: Where should we go from here?</span>
+                <div style="color:#64748b;font-size:0.8rem;font-style:italic;margin-top:2px;padding-left:4px;">"Christopher Byrd: You wanna get started with the onboarding date?"</div>
+              </div>
+            </div>
+        </div>
+        <div style="margin-bottom:16px;padding:14px;background:rgba(255,255,255,0.04);border-radius:10px;border-left:3px solid #facc15;">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+            <strong style="color:#f1f5f9;font-size:0.95rem;">Objection Handling</strong>
+            <span style="color:#facc15;font-weight:700;font-size:0.95rem;">2.0/3</span>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+              <span style="flex-shrink:0;font-size:0.9rem;">&#x2705;</span>
+              <div>
+                <span style="color:#cbd5e1;font-size:0.88rem;">Did I confirm return on investment and handle logistical money? (could they pay, how do they want to pay?)</span>
+                <div style="color:#64748b;font-size:0.8rem;font-style:italic;margin-top:2px;padding-left:4px;">"Christopher Byrd: sending you this link for the payment... Jaxon: I'm gonna run over there right now. Should be within the next fifteen, twenty minutes."</div>
+              </div>
+            </div><div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+              <span style="flex-shrink:0;font-size:0.9rem;">&#x274C;</span>
+              <div>
+                <span style="color:#cbd5e1;font-size:0.88rem;">Did I confirm whether they actually need to make the decision (authority objection) if they brought it up? And is that person responsible for the end result?</span>
+                <div style="color:#64748b;font-size:0.8rem;font-style:italic;margin-top:2px;padding-left:4px;">Not discussed</div>
+              </div>
+            </div><div style="display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+              <span style="flex-shrink:0;font-size:0.9rem;">&#x2705;</span>
+              <div>
+                <span style="color:#cbd5e1;font-size:0.88rem;">If they had fear or uncertainty, did I ask whether it was riskier to start solving their problem or riskier to not do anything at all?</span>
+                <div style="color:#64748b;font-size:0.8rem;font-style:italic;margin-top:2px;padding-left:4px;">"Christopher Byrd: As humans, we highly, like, overestimate the downside and very underestimate the upside... this would kill that problem because you would have to do it consistently."</div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feedback -->
+    <div class="glass">
+      <h2>Coaching Feedback</h2>
+      <p class="feedback-text">Chris, phenomenal job using Jaxon's actual numbers (ad spend, CPL, profit margins) to mathematically prove the value of your packages and guide him to the right tier. Your pitch was perfectly tailored to his pain point of not wanting to script and shoot consistently. To elevate this even further, lean more into the emotional consequence and cost of inaction before jumping into the math. Ask questions like, 'What happens to your growth if you don't get this dialed in before paying overhead on the new shop?' to build deeper urgency.</p>
+    </div>
+
+    <!-- What Went Well -->
+    <div class="glass">
+      <h2>What Went Well</h2>
+      <ul class="went-well-list"><li>Exceptional use of ROI calculations based on the prospect's real metrics (CPL, ad spend, profit margin) to mathematically prove the value.</li><li>Great active listening during discovery, tying your solution perfectly to Jaxon's frustration with scripting his own videos so he sounded authentic.</li><li>Handled the prospect's live hesitation beautifully by addressing human nature (overestimating downside) and refocusing him on the benefit of long-term consistency.</li></ul>
+    </div>
+
+    <!-- What to Do Differently -->
+    <div class="glass">
+      <h2>What to Do Differently</h2>
+      <ul class="do-diff-list"><li>Set a clear time constraint and agenda check at the very beginning of the call (e.g., 'Do we still have 45 minutes for this?').</li><li>Dig deeper into the personal/emotional consequence of being 'wrapped up in the day-to-day stuff' rather than just taking it at face value.</li><li>Incorporate Cost of Inaction questions. Ask what happens to his growth timeline for the new physical shop if he doesn't solve his inconsistent lead flow.</li></ul>
+    </div>
+
+    <footer>Generated by Social Era Media Sales System · October 20, 2026</footer>
+  </div>
+</body>
+</html>
